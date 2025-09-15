@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(const MyApp());
-}dd
+}
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -48,6 +48,8 @@ class MyHomePage extends StatefulWidget {
   // always marked "final".
 
   final String title;
+
+  var s = 1 + 5;
 
   @override
   State<MyHomePage> createState() => _MyHomePageState();
