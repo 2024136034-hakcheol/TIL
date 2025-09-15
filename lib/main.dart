@@ -49,8 +49,6 @@ class MyHomePage extends StatefulWidget {
 
   final String title;
 
-  var s = 1 + 5;
-
   @override
   State<MyHomePage> createState() => _MyHomePageState();
 }
