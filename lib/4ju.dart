@@ -226,9 +226,32 @@ void main() {
 //     condition = false;
 //   }
   
-  var i = 0;
-  while (i < 10) {
-    print(i);
-    i++;
+//   var i = 0;
+//   while (i < 10) {
+//     print(i);
+//     i++;
+//   }
+  
+  var output = StringBuffer();
+  
+  var n = 20;
+  for (var y = 0; y < n; y++) {
+    for (var x = 0; x < n; x++) {
+      var condition =
+        y == 0 ||
+        x == 0 ||
+        y == n - 1 ||
+        x == n - 1 ||
+        x == y;
+      condition = !condition;
+      if (condition) {
+        output.write('#');
+      } else {
+        output.write(' ');
+      }
+    }
+    output.writeln();
   }
+  
+  print(output.toString());
 }
