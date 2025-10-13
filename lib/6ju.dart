@@ -1,3 +1,0 @@
-main void() {
-print("hello");
-}
